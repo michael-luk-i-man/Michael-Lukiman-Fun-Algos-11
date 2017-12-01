@@ -1,0 +1,19 @@
+# FA11 Main
+
+1 > 
+
+1.1 Weights of undirected graph G all value w. Create algorithm to make MST. Faster than Prim?
+
+1.2 One edge is w'. Modify algorithm. What is running time? Compare to part (a)/Prim. 
+
+2 > Edge weights are 1 to W. Modify PRim's to acieve running time O(E + VW).
+
+3 > Kruskal's algorithm requires a disjoint-set data structure that can perform oeprations MAKE-SET, FIND-SET and UNION. 
+
+The disjoint needs to have this property: any sequence of m operations runs in O(mlogn), where n is the numbers of MAKE-SET operations. 
+
+4 > Bellman-Ford with vertex z as source. 
+
+4.1 Relax edges in order: (t,x), (t,y), (x,t), (y,x), (y,z), (z,x), (z,s), (s,t), (s,y). Show d and parent values at each pass. 
+
+4.2 Change weight of (z,x) to 4 with s as the source. 
