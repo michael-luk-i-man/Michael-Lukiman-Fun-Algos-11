@@ -6,14 +6,175 @@
 
 1.2 One edge is w'. Modify algorithm. What is running time? Compare to part (a)/Prim. 
 
-2 > Edge weights are 1 to W. Modify PRim's to acieve running time O(E + VW).
+
+DONEZO=======
+
+--
+
+2 > Edge weights are 1 to W. Modify Prim's to acieve running time O(E + VW).
+
+SOUNDS LIKE COUNTING SORT
+
+--
 
 3 > Kruskal's algorithm requires a disjoint-set data structure that can perform oeprations MAKE-SET, FIND-SET and UNION. 
 
 The disjoint needs to have this property: any sequence of m operations runs in O(mlogn), where n is the numbers of MAKE-SET operations. 
 
+--
+
 4 > Bellman-Ford with vertex z as source. 
 
 4.1 Relax edges in order: (t,x), (t,y), (x,t), (y,x), (y,z), (z,x), (z,s), (s,t), (s,y). Show d and parent values at each pass. 
 
-4.2 Change weight of (z,x) to 4 with s as the source. 
+
+z is source with distance zero. The rest are distance infinity. 
+
+Pass 1: 
+
+s=inf, pi=nil
+t=inf, pi=nil
+x=inf, pi=nil
+y=inf, pi=nil
+z=0, pi=nil
+
+
+t to x is inf + 5 => x.d = inf, pi=t 
+t to y is inf + 8 => y.d = inf, pi=t
+t to z is inf + -4 => unchanged, z.d = 0, pi=nil
+x to t is inf + -2 => t.d = inf, pi=t
+y to x is inf + -3 => x.d = inf, pi=y
+y to z is inf + 9 => unchanged, z.d = 0, pi=nil
+z to x is 0 + 7 => x.d = 7, pi=z
+z to s is 0 + 2 => s.d = 2, pi=z
+s to t is 2 + 6 => t.d = 8, pi=s
+s to y is 2 + 7 => y.d = 9, pi=s
+
+
+Pass 2: 
+
+s=2, pi=z
+t=8, pi=s
+x=7, pi=z
+y=9, pi=s
+z=0, pi=nil
+
+t to x is 8 + 5 => unchanged, x.d = 7, pi=z # 
+t to y is 8 + 8 => unchanged, y.d = 9, pi=s #
+t to z is 8 + -4 => unchanged, z.d = 0, pi=nil #
+x to t is 7 + -2 => t.d = 5, pi=x #
+y to x is 9 + -3 => x.d = 6, pi=y #
+y to z is 9 + 9 => unchanged, z.d = 0, pi=nil #
+z to x is 0 + 7 => unchanged, x.d = 6, pi=y # 
+z to s is 0 + 2 => unchanged, s.d = 2, pi=z #
+s to t is 2 + 6 => unchanged, t.d = 5, pi=x #
+s to y is 2 + 7 => unchanged, y.d = 9, pi=s #
+
+Pass 3: 
+
+s=2, pi=z
+t=5, pi=x
+x=6, pi=y
+y=9, pi=s
+z=0, pi=nil
+
+t to x is 5 + 5 => unchanged, x.d = 7, pi=z # 
+t to y is 5 + 8 => unchanged, y.d = 9, pi=s #
+t to z is 5 + -4 => unchanged, z.d = 0, pi=nil #
+x to t is 6 + -2 => t.d = 4, pi=x #
+y to x is 9 + -3 => unchanged, x.d = 6, pi=y #
+y to z is 9 + 9 => unchanged, z.d = 0, pi=nil #
+z to x is 0 + 7 => unchanged, x.d = 6, pi=y # 
+z to s is 0 + 2 => unchanged, s.d = 2, pi=z #
+s to t is 2 + 6 => unchanged, t.d = 5, pi=x #
+s to y is 2 + 7 => unchanged, y.d = 9, pi=s #
+
+Pass 4:
+
+s=2, pi=z
+t=4. pi=x
+x=6, pi=y
+y=9, pi=s
+z=0, pi=nil
+
+t to x is 4 + 5 => unchanged, x.d = 7, pi=z # 
+t to y is 4 + 8 => unchanged, y.d = 9, pi=s #
+t to z is 4 + -4 => unchanged, z.d = 0, pi=nil #
+x to t is 6 + -2 => unchanged, t.d = 4, pi=x #
+y to x is 9 + -3 => unchanged, x.d = 6, pi=y #
+y to z is 9 + 9 => unchanged, z.d = 0, pi=nil #
+z to x is 0 + 7 => unchanged, x.d = 6, pi=y # 
+z to s is 0 + 2 => unchanged, s.d = 2, pi=z #
+s to t is 2 + 6 => unchanged, t.d = 5, pi=x #
+s to y is 2 + 7 => unchanged, y.d = 9, pi=s #
+
+Bellman-Ford complete! 
+
+s=2, pi=z
+t=4. pi=x
+x=6, pi=y
+y=9, pi=s
+z=0, pi=nil
+
+----
+
+s is the source with distance zero. The rest are distance infinity, and (z,x) is now 4. 
+
+Pass 1:
+
+s=0, pi=nil
+t=inf, pi=nil
+x=inf, pi=nil
+y=inf, pi=nil
+z=inf, pi=nil
+
+t to x is inf + 5 => x.d = inf, pi=t. 
+t to y is inf + 8 => y.d = inf, pi=t
+t to z is inf + -4 => z.d = inf, pi=t
+x to t is inf + -2 => t.d = inf, pi=t
+y to x is inf + -3 => x.d = inf, pi=y
+y to z is inf + 9 => z.d = inf, pi=y
+z to x is inf + 4 => x.d = inf, pi=z
+z to s is inf + 2 => s.d = 0, pi=nil
+s to t is 0 + 6 => t.d = 6, pi=s
+s to y is 0 + 7 => y.d = 7, pi=s
+
+Pass 2:
+
+s=0, pi=nil
+t=6, pi=s
+x=inf, pi=z
+y=7, pi=s
+z=inf, pi=y
+
+t to x is 6 + 5 => x.d = 11, pi=t 
+t to y is 6 + 8 => unchanged, y.d = 7, pi=s
+t to z is 6 + -4 => z.d = 2, pi=t
+x to t is 11 + -2 => unchanged, t.d = 6, pi=s
+y to x is 7 + -3 => x.d = 4, pi=y
+y to z is 7 + 9 => unchanged, z.d = 2, pi=t
+z to x is 2 + 4 => unchanged, x.d = 4, pi=y
+z to s is 2 + 2 => unchanged, s.d = 0, pi=nil
+s to t is 0 + 6 => unchanged, t.d = 6, pi=s
+s to y is 0 + 7 => unchanged, y.d = 7, pi=s
+
+Pass 3:
+
+Pass 2:
+
+s=0, pi=nil
+t=6, pi=s
+x=4, pi=y
+y=7, pi=s
+z=2, pi=t
+
+t to x is 6 + 5 => unchanged, x.d = 4, pi=y 
+t to y is 6 + 8 => unchanged, y.d = 7, pi=s
+t to z is 6 + -4 => unchanged, z.d = 2, pi=t
+x to t is 4 + -2 => unchanged, t.d = 6, pi=s
+y to x is 7 + -3 => unchanged, x.d = 4, pi=y
+y to z is 7 + 9 => unchanged, z.d = 2, pi=t
+z to x is 2 + 4 => unchanged, x.d = 4, pi=y
+z to s is 2 + 2 => unchanged, s.d = 0, pi=nil
+s to t is 0 + 6 => unchanged, t.d = 6, pi=s
+s to y is 0 + 7 => unchanged, y.d = 7, pi=s

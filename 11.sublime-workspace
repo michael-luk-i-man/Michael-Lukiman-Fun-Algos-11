@@ -1,0 +1,663 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Q",
+				"Q"
+			],
+			[
+				"determine",
+				"determine_special_weight"
+			],
+			[
+				"special",
+				"special_weight"
+			],
+			[
+				"normal",
+				"normal_weight"
+			],
+			[
+				"sour",
+				"source_list"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"ra",
+				"raw_democratized"
+			],
+			[
+				"raw",
+				"raw_republicized"
+			],
+			[
+				"node",
+				"node"
+			],
+			[
+				"con",
+				"connectedNode"
+			],
+			[
+				"connec",
+				"connectedNode"
+			],
+			[
+				"in",
+				"indice_g"
+			],
+			[
+				"ind",
+				"indice_n"
+			],
+			[
+				"indi",
+				"indice_n"
+			],
+			[
+				"indic",
+				"indice_g"
+			],
+			[
+				"style",
+				"list-style"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"L",
+				"Left"
+			],
+			[
+				"subdir",
+				"subdirscrape_walmart"
+			],
+			[
+				"url",
+				"url_branches"
+			],
+			[
+				"po",
+				"positive_count"
+			],
+			[
+				"Positive",
+				"positive_count"
+			],
+			[
+				"B",
+				"be"
+			],
+			[
+				"smax",
+				"smax_location"
+			],
+			[
+				"input",
+				"input_byte"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"bytes",
+				"bytesToHex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MAIN.txt",
+			"settings":
+			{
+				"buffer_size": 4483,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "# FA11 Main"
+			}
+		},
+		{
+			"file": "FA11 1-1.py",
+			"settings":
+			{
+				"buffer_size": 3758,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "# FA11 1.1"
+			}
+		},
+		{
+			"file": "FA11 2.py",
+			"settings":
+			{
+				"buffer_size": 1041,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "FA11 3.py",
+			"settings":
+			{
+				"buffer_size": 126,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "# FA11 3"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 345.0,
+		"last_filter": "back",
+		"selected_items":
+		[
+			[
+				"back",
+				"BackgroundColorEdit: Set Background Color"
+			],
+			[
+				"backgr",
+				"BackgroundColorEdit: Set Background Color"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				" backgr",
+				"BackgroundColorEdit: Set Background Color"
+			],
+			[
+				"backgro",
+				"BackgroundColorEdit: Set Background Color"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				"vmen",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Channel"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 461.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ashkarav/COURANT-GIT/Michael-Lukiman-Fun-Algos-10/FA10 5.py",
+		"/home/ashkarav/COURANT-GIT/Michael-Lukiman-Fun-Algos-10/main.txt",
+		"/home/ashkarav/COURANT-GIT/Michael-Lukiman-Fun-Algos-10/FA10 1-2.py",
+		"/home/ashkarav/COURANT-GIT/Michael-Lukiman-Fun-Algos-10/FA10 2.py",
+		"/home/ashkarav/michaellukiman.com/bs/index.html",
+		"/home/ashkarav/transparent-terr/table_year_vs_numbers.html",
+		"/home/ashkarav/transparent-terr/output_find_all_tables.py",
+		"/home/ashkarav/transparent-terr/view-source_https___en.wikipedia.org_wiki_Terrorism_in_the_United_States.html",
+		"/home/ashkarav/transparent-terr/ttp.py",
+		"/home/ashkarav/Downloads/multiple_regression.py",
+		"/home/ashkarav/Courant_Code/Michael-Lukiman-Adv-Security-3/shellcode2.py",
+		"/home/ashkarav/Courant_Code/Michael-Lukiman-Adv-Security-3/fuuuck.UTen_UANG=64LD=32G_PIYRINE_KE",
+		"/home/ashkarav/Courant_Code/Michael-Lukiman-Adv-Security-3/main_dump.txt",
+		"/home/ashkarav/Courant_Code/Michael-Lukiman-Adv-Security-3/mykey_dump.txt",
+		"/home/ashkarav/Courant_Code/Michael-Lukiman-Adv-Security-3/main_response_raw.txt",
+		"/home/ashkarav/ttp.py",
+		"/home/ashkarav/microwave-madness/The_Moon_Man.py",
+		"/home/ashkarav/Courant_Code/main_response_raw.txt",
+		"/home/ashkarav/Downloads/bffff490.bffff500.bffff4f4.0.0.0.6b746f6e.30307965",
+		"/home/ashkarav/Courant_Code/checkIDcode_dump.txt",
+		"/home/ashkarav/Courant_Code/mykey_dump.txt",
+		"/home/ashkarav/Courant/assembly.txt",
+		"/home/ashkarav/Courant/main_dump.txt",
+		"/home/ashkarav/michaellukiman.com/education/index.html",
+		"/home/ashkarav/michaellukiman.com/index.html",
+		"/home/ashkarav/Downloads/Courant_FA/hw8_main",
+		"/home/ashkarav/Downloads/substring_ML.py",
+		"/home/ashkarav/0_PRIMING_NECESSARY/response to pierogi.html",
+		"/home/ashkarav/my_digital_shapeshifter/quora_bio.html",
+		"/home/ashkarav/Downloads/Courant_FA/ML-FunAlgos7.txt",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-2/index.html",
+		"/home/ashkarav/Downloads/Prac Comp Sec 2 (1).pdf",
+		"/home/ashkarav/michaellukiman.com/cssx/home.css",
+		"/home/ashkarav/Adv-Security-2/assets/js/main.js",
+		"/home/ashkarav/Adv-Security-2/assets/css/main.css",
+		"/home/ashkarav/Adv-Security-2/index.html",
+		"/home/ashkarav/my_digital_shapeshifter/quora_save",
+		"/home/ashkarav/.config/sublime-text-3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/home/ashkarav/.config/sublime-text-3/Packages/User/HTMLBeautify.sublime-settings",
+		"/home/ashkarav/.config/sublime-text-3/Packages/User/.jsbeautifyrc",
+		"/home/ashkarav/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/Default (Linux).sublime-keymap",
+		"/home/ashkarav/Downloads/theory/index.html",
+		"/home/ashkarav/michaellukiman.com/pad.html",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/one.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/five.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/four.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/three.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/two.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-6/notes.txt",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-7/one.ipynb",
+		"/home/ashkarav/shpil.txt",
+		"/home/ashkarav/microwave-madness/example_walmart_subdir.html",
+		"/home/ashkarav/microwave-madness/plotting_test.py",
+		"/home/ashkarav/microwave-madness/example_walmart.html",
+		"/home/ashkarav/Michael-Lukiman-Language-Design-2/main.txt",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/login.html",
+		"/home/ashkarav/microwave-madness/subdirscrape_walmart.py",
+		"/home/ashkarav/.config/sublime-text-3/Packages/Javascript Beautify/Default (Linux).sublime-keymap",
+		"/home/ashkarav/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/ashkarav/.config/sublime-text-3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-4/pos_with_k.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-4/main.txt",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-4/find_second_max.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-4/heap_sort.py",
+		"/home/ashkarav/Michael-Lukiman-Fun-Algos-4/pos.py",
+		"/home/ashkarav/with-a-chance/index.html",
+		"/home/ashkarav/.config/sublime-text-3/Packages/Browser Refresh/Default (Linux).sublime-keymap",
+		"/home/ashkarav/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/ashkarav/.config/sublime-text-3/Packages/User/ActualVim.sublime-settings",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/computer.txt",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/simpledictionary.txt",
+		"/home/ashkarav/nyushpush-me/index.html",
+		"/home/ashkarav/nyushpush-me/js/ldng.js",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/DictionaryAttack_b64.java",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/passwords_hex.txt",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/DictionaryAttack_hex.java",
+		"/home/ashkarav/Michael-Lukiman-Adv-Security-1/sub.php",
+		"/home/ashkarav/dictionary-attack/passwords_hex.txt",
+		"/home/ashkarav/dictionary-attack/passwords_b64.txt",
+		"/home/ashkarav/dictionary-attack/DictionaryAttack_b64.java",
+		"/home/ashkarav/dictionary-attack/DictionaryAttack.java",
+		"/home/ashkarav/dictionary-attack/DictionaryAttack2.java",
+		"/home/ashkarav/dictionary-attack/password.txt",
+		"/home/ashkarav/Michael-Lukiman-Language-Design-1/4 - Bison Parser/tinybasic.l",
+		"/home/ashkarav/Michael-Lukiman-Language-Design-1/4 - Bison Parser/tinybasic.y"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"is",
+			"table",
+			"number",
+			"\\",
+			"main",
+			"tulsa race riot",
+			"race riot",
+			":",
+			"8048438",
+			"804843f",
+			":",
+			".",
+			" ",
+			"putchar",
+			"root",
+			"source",
+			"ng",
+			"script",
+			"\";",
+			"span",
+			"5vw",
+			"\"<",
+			"[[",
+			"ma",
+			"pyplot",
+			"matplotlib",
+			"[[",
+			"calories",
+			"https",
+			">",
+			"ip/",
+			"$2.",
+			"PRICE-GROUP",
+			"HREF",
+			"$2.98",
+			"2.9",
+			"$",
+			"script",
+			"feedback",
+			"glitch",
+			"hashes should be same but are not",
+			"t,",
+			"line)",
+			"instance_type",
+			"else if",
+			"else if ",
+			"\"SHA-1\"",
+			"gToS",
+			"MD2",
+			"MD5",
+			"/User",
+			"pr",
+			"println(",
+			"return sha2",
+			".getBytes()",
+			"MD5",
+			" : ",
+			": 1 :",
+			": i :",
+			"SHA-256",
+			"stringTo",
+			"sha",
+			"sha1",
+			"{$$ =",
+			"cou",
+			"<<endl",
+			"oken",
+			"type",
+			"\\b",
+			"{ return",
+			"|"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MAIN.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3087,
+								3087
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# FA11 Main",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1845.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "FA11 1-1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# FA11 1.1",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "FA11 2.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "FA11 3.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# FA11 3",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "11.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

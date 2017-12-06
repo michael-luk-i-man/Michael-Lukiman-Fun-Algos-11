@@ -1,0 +1,8 @@
+G = (V,E) 
+W: E -> R
+A: E -> {0,1}
+
+del(s,u)
+
+c(s,u) = min weight of path that has <= 1 tolls
+

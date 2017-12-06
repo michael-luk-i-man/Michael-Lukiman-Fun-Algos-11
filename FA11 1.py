@@ -5,20 +5,19 @@
 
 # 1.1 Homogenous nodes. 
 
-def MST_homogenous(G,w):
+def MST_homogeneous(G,w):
 
-	for u in G.v: 
-		v = G.adj[u][0] # V is any arbitrary node connected to that node. 
-		for adj in G.adj[u]:
-			G.adj[adj].remove(u) # Remove all other edges coming out of u so there are no backedge repeats. 
-		v.pi = u # Parent of v is u.  
-		v.key = w(u,v) # Key of v is the weight of connecting edge. 
-		u = v # New pass, where v is the new u. Loop continues to grow tree.
+	Q = G.v
+	u = dequeue(Q)
+	u.key = 0
 
-		# Insert all edges are safe meme.
+	while Q != []:
+		v = dequeue(Q)
+		v.pi = u
+		v.key = w 
+		u = v 
 
-		# Way faster than Prim, where V is the number of nodes and E is the number of edges, requiring O((V-1) + E) steps.  
-
+# Way faster than Prim, at V steps. 
 
 # 1.2 One weight that's not like the others. 
 
@@ -26,22 +25,51 @@ def MST_odd_one_out(G,w):
 
 	normal_weight, special_weight = determine_normal_weight(w)
 	special_weight = determine_special_weight(w, special_weight)
-	
-	u = special_weight.u
-	special_weight.v.pi = u
+	w = normal_weight
 
-	# The first link is made between two nodes. The tree right now is two nodes and the edge between them. 
+	if normal_weight => special_weight:
+		Q = G.v
+		u = dequeue(Q)
+		u.key = 0
 
-	for adj in G.adj[u]:
-		G.adj[adj].remove(u) # Ignore chances for redundant edge checks. 
+		while len(Q) > 1: # While there's more than one element queued
+			if Q[0] in G.adj[u] and w(u,Q[0]) == normal_weight: # Assume Q dequeues from front. If we prioritize the normal weight: 
+				v = dequeue(Q) 
+				v.pi = u
+				v.key = w 
+				u = v 
+			else: # If it's not the normal weight, then the vertex gets moved to the back of the queue. 
+				Q.append(dequeue(Q))
 
+		v = dequeue(Q) # The last element is either unreachable by normal weights via the tree we've made so far or it is simply the last element without any rearrangement, thus we see if there are any normal adjacent weights:
+			
+		global key 	
+		if any_adj_normals(G,v) != True: # ...if not true that means there is only one edge from the vertex and it is the special weight. 
+			v.pi = key
+			v.key = special_weight
 
-	G_prime = G 
-	G_prime.remove(u) # Ignore the parent. 
-	w_prime = w
-	w_prim.remove(w) # Ignore the already included edge		
+	else: # We prefer the special weight if we can see it. 
+		for u in G.v:
+			for v in G.adj[u]: # Max (V-1)^2 if graph is strongly connected.
+				if w(u,v) = special_weight: # Find that weight.
+					v.pi = u 
+					v.key = special_weight
+					key_G = G
+					G.v.remove(u)
+					G_prime = G
+					G = key_G
+					MST_homogeneous(G_prime) # Run the uniform w algorithm after making the first connection with w'. 
 
-	MST_homogenous(G_prime, w_prime) # Run homogenous MST. 
+def any_adj_normals(G,v):
+	for x in G.adj[v]:
+		if w(x,v) == normal_weight: # If there is a normal weight we make the other vertex the parent of v. 
+			v.pi = x
+			v.key = w
+			return True
+		if w(x,v) == special_weight:
+			global key
+			key = x
+			return False
 
 	# Running time of homogenous except with a potential (E + 4) additional comparisons due to determine_normal and determine_special_weight.
 
