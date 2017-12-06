@@ -3,21 +3,29 @@
 # Weights are integer values between 1 and W, inclusive. 
 
 def MST_known_integers():
-	sorted_w = counting_sort(w)
+	sorted_w = counting_sort(w,max_w)
+
+	Qw = sorted_w
+	Qe = []
+	Qv = G.v
 
 	for u in G.v:
-		u.key = inf 
+		u.key = inf
 		u.pi = NIL
+		for v in G.adj[u]:
+			Qe.append({u,v}) # could have repeat edges in other directionm so O(V(V-1)/2)
 
-	Q = G.v
+	while Qv != []:
+		weight_to_find = dequeue(Qw) # Already sorted so can just dequeue.
+		find_edge(G,Qe,weight_to_find) 
 
-	while Q != []:
-		if sorted_w[0].v in Q:
-			sorted_w[0].u = u
-			sorted_w[0].v.pi = sorted_w[0].u
-
-			Q.remove(u)
-			sorted_w.remove(sorted_w[0])
+def find_edge(G,Qe,weight_to_find):
+	for edge in Qe:
+		if w(edge) = weight_to_find: # Find the edge 
+			edge[1].pi = edge[0] # v.pi of edge is u
+			edge[1].key = w(edge)
+			dequeue(Qv)
+			return 
 
 			
 
