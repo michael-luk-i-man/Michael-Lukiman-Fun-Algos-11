@@ -21,10 +21,10 @@ def MST_known_integers():
 
 def find_edge(G,Qe,weight_to_find):
 	for edge in Qe:
-		if w(edge) = weight_to_find: # Find the edge 
+		if w(edge) = weight_to_find and edge[1] in Qv: # Find the lightest edge connecting to a separated vertex.
 			edge[1].pi = edge[0] # v.pi of edge is u
 			edge[1].key = w(edge)
-			dequeue(Qv)
+			Qv.remove(v) # v is accounted for in the tree with the smallest weight connected to it 
 			return 
 
 			
